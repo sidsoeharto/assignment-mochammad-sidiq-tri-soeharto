@@ -12,8 +12,8 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light nav-active sticky-top">
-        <div class="container-fluid mx-md-2 mx-lg-5">
-            <a class="navbar-brand" href="#">
+        <div class="container-fluid mx-2 mx-md-4 mx-lg-5">
+            <a class="navbar-brand me-4" href="#">
                 <img src="./assets/nibble-logo.png" class="logo"/>
             </a>
             <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-2 mx-xl-4">
                         <a class="nav-link" href="#">Our Story</a>
                     </li>
-                    <li class="nav-item dropdown mx-2">
+                    <li class="nav-item dropdown mx-2 mx-xl-4">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           How It Works
                         </a>
@@ -41,21 +41,21 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-2 mx-xl-4">
                         <a class="nav-link" href="#">FAQs</a>
                     </li>
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-2 mx-xl-4">
                         <a class="nav-link" href="#">Chomp</a>
                     </li>
-                    <li class="d-md-none d-flex nav-item mx-2">
+                    <li class="d-md-none d-flex nav-item mx-2 mx-xl-4">
                         <a class="nav-link fw-bold" href="#">Log in</a>
                     </li>
-                    <li class="d-md-none d-flex nav-item signup-button mx-2">
+                    <li class="d-md-none d-flex nav-item signup-button mx-2 mx-xl-4">
                         <a class="nav-link text-white" href="#">Sign Up</a>
                     </li>
                 </ul>
             </div>
-            <div class="d-md-flex d-none">
+            <div class="d-md-flex d-none navbar-end">
                 <div class="nav-item me-2 login-button">
                     <a class="nav-link fw-bold" href="#">Log in</a>
                 </div>
@@ -88,41 +88,41 @@
                         Hey! Want to chat? <br>
                         Drop us a line here.
                     </h2>
-                    <p>
+                    <p class="contact-us-paragraph">
                         Have a question, need support? Looking for a PR freelancer for hire as an alternative to a public relations agency or in house? Are you a publicity specialist looking to join our consultant database?
                     </p>
-                    <p>
+                    <p class="contact-us-paragraph">
                         For any reason, please fill in the form on the right so that your message is directed to the right person or team. We read every message that we get and will reply to you as soon as we can.
                     </p>
                 </div>
                 <div class="contact-us-body-right card">
-                    <form class="contact-form py-5" onsubmit="return false;">
-                        <div class="row px-4 mb-3">
+                    <form class="contact-form" onsubmit="return false;">
+                        <div class="row px-2 px-md-4">
                             <div class="col-12 col-xl-6">
-                                <input class="form-input form-control col-12 col-lg-6 me-4 mb-3" id="name-input" type="text" name="full_name" placeholder="Full name">
+                                <input class="form-input form-control col-12 col-lg-6 me-4" id="name-input" type="text" name="full_name" placeholder="First and last name">
                             </div>
                             <div class="col-12 col-xl-6">
                                 <input class="form-input form-control col-12 col-lg-6" type="email-input" id="email-input" type="email" name="email" placeholder="Email address">
                             </div>
                         </div>
-                        <div class="row px-4 mb-3">
+                        <div class="row px-2 px-md-4">
                             <div class="col-12">
                                 <select class="form-input form-select col-12" name="reason" aria-label="Reason for contacting us">
-                                    <option selected value="">Reason for contacting us</option>
-                                    <option>Dummy 2</option>
-                                    <option>Dummy 3</option>
+                                    <option selected disabled value="">Reason for contacting us</option>
+                                    <option value="2">Dummy 2</option>
+                                    <option value="3">Dummy 3</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="row px-4 mb-5">
+                        <div class="row px-2 px-md-4">
                             <div class="col-12">
-                                <textarea class="form-control" aria-label="With textarea" rows="4" placeholder="Write your message here, please be as detailed as you can."></textarea>
+                                <textarea class="form-input form-control" aria-label="With textarea" rows="4" placeholder="Write your message here, please be as detailed as you can."></textarea>
                             </div>
                         </div>
-                        <div class="d-flex flex-column flex-xl-row justify-content-between px-4">
+                        <div class="d-flex flex-column flex-xl-row justify-content-between px-2 px-md-4" style="width: 100%;">
                             <div class="d-inline-flex items-center p-0 mb-3">
                                 <input class="form-check-input me-2" type="checkbox" name="terms" value="">
-                                <label>I agree to hear more about Nibble, its services and articles</label>
+                                <label class="terms-label">I agree to hear more about Nibble, its services and articles</label>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <button class="d-inline-flex btn-submit" type="submit">
@@ -208,13 +208,13 @@
                     <h4>SUBSCRIBE TO CHOMP</h4>
                     <p>Get interviews, advice, tips and guides about business and PR from our blog every month. </p>
                     <form id="subscribe-form" class="d-flex flex-column flex-xl-row" onsubmit="return false;">
-                        <input class="form-control me-2 mb-2 mb-xl-0" type="text" name="email" id="sub-email" placeholder="you@email.com">
-                        <button class="btn-submit-subscribe mx-auto md:mx-0" type="submit" class="sub">Subscribe</button>
+                        <input class="form-control subscribe-input me-2 mb-4 mb-md-2 mb-xl-0" type="text" name="email" id="sub-email" placeholder="you@email.com">
+                        <button class="btn-submit-subscribe mx-auto mx-md-0" type="submit" class="sub">Subscribe</button>
                     </form>
                 </div>
                 
                 <div class="copyright-text text-end">
-                    <p>Copyright © 2021 Nibble Tech Ltd. All rights reserved.
+                    <p class="m-0">Copyright © 2021 Nibble Tech Ltd. All rights reserved.
                     </p>
                 </div>
             </div>
